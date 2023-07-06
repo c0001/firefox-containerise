@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Containerise",
+  "name": "Containerise (entropy ver.)",
   "version": "3.9.0",
   "description": "Firefox extension to automatically open websites in a container",
   "icons": {
@@ -27,11 +27,19 @@
   },
   "applications": {
     "gecko": {
-      "id": "containerise@kinte.sh",
+      "id": "{92164d8c-0d24-48d5-b05a-bc7da1d08f28}",
       "strict_min_version": "53.0"
     }
   },
   "options_ui": {
     "page": "ui-preferences/index.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+Q"
+      },
+      "description": "Open search popup"
+    }
   }
 }
